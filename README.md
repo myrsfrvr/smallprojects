@@ -4,4 +4,4 @@ Small projects made for practising skills
 
 1. Mobile Menu from iCodeThis.
 
-![Screenshot of Mobile Menu Project](./screenshots/mobileMenu.png)
+<img src="./screenshots/mobileMenu.png" alt="Screenshot of Mobile Menu Project" width="300"/>

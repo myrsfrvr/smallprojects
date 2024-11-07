@@ -10,7 +10,7 @@
   --blue-color: #618bfe;
   --dark-blue-color: #577de5;
   --icon-color: #bbb;
-  --highlight-color: #5a8cc9;
+  --highlight-color: #337ae5;
 }
 
 body {
@@ -21,20 +21,31 @@ body {
 .container {
   margin: 2.5rem auto;
   width: 20rem;
-  background-color: #d07dfa;
+
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+
+  position: relative;
 }
 
 /* Doctor info */
 .doctor-card {
   padding: 1.5rem;
+  margin-bottom: 2rem;
   display: flex;
   /* justify-content: center; */
   align-items: center;
   gap: 1.25rem;
+
+  color: var(--white-text-color);
+  border-radius: 10px;
+  background: linear-gradient(to right, #7590d7, #4965c6);
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .job-title {
-  font-size: 0.9rem;
+  color: #ccc;
+  font-size: 0.8rem;
 }
 
 .doctor-img {
@@ -71,4 +82,51 @@ body {
 
 .btn-icon {
   font-size: 1.2rem;
+}
+
+/* Menu */
+.menu-list {
+  list-style: none;
+  font-size: 0.9rem;
+  padding: 2rem 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  color: #aaa;
+}
+
+.menu-item a:link,
+.menu-item a:visited {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  color: var(--dark-text-color);
+  transition: 130ms;
+}
+
+.menu-item a:hover,
+.menu-item a:active {
+  text-decoration: none;
+  color: var(--highlight-color);
+  border-left: 3px solid var(--highlight-color);
+}
+
+.menu-item a:hover .menu-icon {
+  color: var(--blue-color);
+}
+
+.close-icon {
+  position: absolute;
+  bottom: 1.4rem;
+  right: 2rem;
+
+  font-size: 1.8rem;
+  color: #aaa;
 }

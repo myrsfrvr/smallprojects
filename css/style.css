@@ -46,20 +46,24 @@ body {
 }
 
 .links:link,
-.links:visited,
-.list-item-description {
+.links:visited {
   text-decoration: none;
-  color: #333;
   font-size: 1.2rem;
 }
 
 .links:hover,
 .links:active {
-  text-decoration: none;
   color: #007508;
 }
 
 .links-main {
   display: inline-block;
   margin-bottom: 0.4rem;
+  color: #333;
+}
+
+.links-sub,
+.list-item-description {
+  color: #666;
+  font-size: 1.2rem;
 }

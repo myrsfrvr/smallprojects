@@ -9,18 +9,128 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Hubot Sans", sans-serif;
   font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: var(--dark-text-color);
 }
 
 .container {
   margin: 2.5rem auto;
-  width: 20rem;
+  width: 50rem;
+  padding: 1.5rem;
 
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
+  background-color: #fff9f2;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side {
+  width: 18.75rem;
 }
 
 .profile-img {
-  width: 100%;
+  width: 5rem;
+  border-radius: 35px;
+  margin-bottom: 0.6rem;
+}
+
+.profile-name {
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.profile-username {
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+
+.profile-description {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
+.btn:link,
+.btn:visited {
+  color: var(--dark-text-color);
+  font-size: 1.4rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.btn--links:link,
+.btn--links:visited {
+  background-color: #fff;
+  padding: 0.8rem 0.8rem 0.5rem 0.8rem;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.btn--links:hover,
+.btn--links:active {
+  background-color: #fffafd;
+  color: #0f102d;
+}
+
+.btn--blue {
+  font-size: 0.9rem;
+  font-family: "Hubot Sans", sans-serif;
+  background-color: #0f102d;
+  color: #fff;
+  padding: 0.8rem 2.6rem;
+  border: 1px solid #0f102d;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn--blue:hover {
+  background-color: #fff;
+  color: #0f102d;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+.info-icon {
+  font-size: 1.4rem;
+}
+
+.followers span {
+  font-weight: 600;
+}
+
+.loading-container {
+  background-color: #dfdcd9;
+  width: 20rem;
+  height: 0.7rem;
+  border-radius: 15px;
+}
+
+.progress-bar {
+  background-color: #f17c38;
+  color: white;
+  padding: 1%;
+  text-align: right;
+  font-size: 1rem;
+  border-radius: 15px 0 0 15px;
+  width: 75%;
+  height: 0.7rem;
 }

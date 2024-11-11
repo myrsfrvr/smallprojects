@@ -5,28 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Header</title>
 
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="../css/profileHeader.css" />
   </head>
   <body>
     <div class="container">
-      <img
-        class="profile-img"
-        src="../img/drJames.jpg"
-        alt="Profile photo of a woman"
-      />
-      <p class="profile-name">MetaMask</p>
-      <p class="profile-username">&#64;metamask</p>
-      <p class="profile-description">
-        MetaMask brings Ethereum to your web browser
-      </p>
+      <div class="left-side">
+        <img
+          class="profile-img"
+          src="../img/drJames.jpg"
+          alt="Profile photo of a woman"
+        />
+        <p class="profile-name">MetaMask</p>
+        <p class="profile-username"><strong>&#64;</strong>metamask</p>
+        <p class="profile-description">
+          MetaMask brings Ethereum to your web browser
+        </p>
 
-      <div class="buttons">
-        <a href=""></a>
-        <ion-icon name="logo-github"></ion-icon>
-        <ion-icon name="logo-linkedin"></ion-icon>
-        <ion-icon name="logo-gitlab"></ion-icon>
-        <ion-icon name="compass-outline"></ion-icon>
+        <div class="buttons">
+          <a class="btn btn--links" href="#">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a class="btn btn--links" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a class="btn btn--links" href="#">
+            <ion-icon name="logo-gitlab"></ion-icon>
+          </a>
+          <a class="btn btn--links" href="#">
+            <ion-icon name="compass-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="loading">
+          <p class="loading-text">6/8 Organizations</p>
+          <a class="btn" href="#">
+            <ion-icon
+              class="info-icon"
+              name="information-circle-outline"
+            ></ion-icon>
+          </a>
+        </div>
+        <div class="loading-container">
+          <div class="progress-bar"></div>
+        </div>
+        <p class="followers"><span>4K</span> Followers</p>
+        <button class="btn btn--blue">Follow</button>
       </div>
     </div>
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

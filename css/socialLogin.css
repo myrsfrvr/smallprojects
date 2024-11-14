@@ -25,6 +25,8 @@ body {
   border-radius: 10px;
   outline: 16px solid #e3ebfa;
   background: linear-gradient(to right, #4d6ddd, #1834a7);
+
+  position: relative;
 }
 
 .heading {
@@ -41,6 +43,7 @@ body {
 
 .form {
   position: relative;
+  margin-bottom: 1.8rem;
 }
 
 .input {
@@ -68,4 +71,24 @@ body {
 
 .btn:hover {
   background-color: #e4eafc;
+}
+
+.friends-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  position: absolute;
+  bottom: -1.5rem;
+  left: 11.75rem;
+}
+
+.friend-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  border: 4px solid #fff;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
 }

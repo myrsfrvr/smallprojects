@@ -63,6 +63,7 @@ body {
   font-size: 0.8rem;
   color: #1834a7;
   transition: 0.3s;
+  cursor: pointer;
 
   position: absolute;
   top: 0.3rem;

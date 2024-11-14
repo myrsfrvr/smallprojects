@@ -13,3 +13,7 @@ Small projects made for practising skills
 3. Profile Header from iCodeThis.
 
 <img src="./screenshots/profileHeader.png" alt="Screenshot of Profile Header Project" width="700"/>
+
+4. Social Login from iCodeThis.
+
+<img src="./screenshots/socialLogin.png" alt="Screenshot of Social Login Project" width="700"/>
